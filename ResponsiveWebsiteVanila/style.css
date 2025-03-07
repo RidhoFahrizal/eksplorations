@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black ;
+     animation: gantiwarnaBackground 1s infinite step-start; 
+}
+
+
+@keyframes gantiwarnaBackground {
+    50% {background-color: black;}
+    50% {background-color: rgb(180, 176, 176);}
+}
+
+.paragraf1  {
+    /* color: rgb(255, 255, 255); */
+    margin-left: 2%;
+    animation: articleColor 1s infinite step-end;
+}
+
+.paragraf2{
+    margin-left: 2%;
+    animation: articleColor 1s infinite step-end;
+
+}
+
+#catatan{
+    margin-left: 15px;
+    padding-left: 15px ;
+    background-color: lightgray;
+    border: 3px solid black;
+    font-style: italic;
+    float: right;
+}
+
+@keyframes articleColor {
+    50% {color: rgba(255, 5, 201, 0.233);}
+    50% {color: rgb(253, 114, 0);}
+}
+
+
+.kotak{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    margin:10px;
+    animation: changeColor 1s infinite step-start;
+}
+
+@keyframes changeColor {
+    33.3% { background-color: rgb(255, 0, 0); }
+   66.7% { background-color: rgb(255, 251, 0); }
+  100% { background-color: rgb(0, 134, 0); }
+}
+
+.image{
+    height: 100px;
+    width: 100px;
+    border-color: black;
+    border-top: 10px;
+}
+
+.gif{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10%;
+}
+
+.gif video{
+    height: 300px;
+    width: 300px;
+}
+
+.marcel > video{
+  
+    height: 300px;
+    width: 300px;
+}
+
+.marcel{
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    
+}
+
+.barisan-kotak{
+    display: flex;  
+    justify-content: space-evenly;
+    gap: 10%;
+}
+
+#profile{
+    height: 100vh;
+    background-color: blue;
+
+}
